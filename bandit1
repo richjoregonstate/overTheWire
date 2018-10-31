@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+#solved with a cat ./-
+
+spawn ssh bandit1@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "boJ9jbbUNNfktd78OOpsqOltutMc3MY1\r"
+interact

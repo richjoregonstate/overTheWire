@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+#ls -a to see all files including hidden ones
+
+spawn ssh bandit3@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK\r"
+interact

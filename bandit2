@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+#cat ./spaces\ in\ this\ filename
+#the key is using the \ to escape and use special chars
+
+spawn ssh bandit2@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9\r"
+interact

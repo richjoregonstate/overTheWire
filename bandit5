@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+#find ./ ! -executable -type f -size 1033c -exec du {} -hb \;
+#look in ./ where there are not -executable -type files of -size 1033bytes and run du -hb on them
+
+spawn ssh bandit5@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "koReBOKuIDDepwhWk7jZC0RTdopnAYKh\r"
+interact

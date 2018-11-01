@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+#Not the best solution but:
+#strings data.txt | grep -e "====="
+#does the trick
+
+
+spawn ssh bandit9@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR\r"
+interact

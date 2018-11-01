@@ -1,0 +1,21 @@
+#!/usr/bin/expect -f
+#This one is fucky
+#Start by 
+#xxd -r data.txt > output
+#At every step in the next one use file to get an idea of how to decompress
+#zcat output.txt | bzcat | zcat > taroutput.txt
+#tar -xf taroutput.txt 
+#^ creates data5.bin
+#tar -xf data5.bin
+#^ creates data6.bin
+#tar -xf data6.bin
+#^creates data8.bin witch is a gzip
+#zcat data8.bin
+#and bingo
+
+
+
+spawn ssh bandit12@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu\r"
+interact

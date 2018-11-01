@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+#base64 -d data.txt
+
+spawn ssh bandit10@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk\r"
+interact

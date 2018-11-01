@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+#ssh -i sshkey.private bandit14@localhost
+#cat /etc/bandit_pass/bandit14
+
+spawn ssh bandit13@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL\r"
+interact

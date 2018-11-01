@@ -1,4 +1,6 @@
 #!/usr/bin/expect -f
+#grep data.txt -e millionth
+#Very simple
 
 spawn ssh bandit7@bandit.labs.overthewire.org -p 2220
 expect "assword:"

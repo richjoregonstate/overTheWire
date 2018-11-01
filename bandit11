@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+#cat data.txt | tr [a-z] [n-za-m] | tr [A-Z] [N-ZA-M]
+
+spawn ssh bandit11@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR\r"
+interact

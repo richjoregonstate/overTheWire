@@ -1,4 +1,6 @@
 #!/usr/bin/expect -f
+#openssl s_client -connect localhost:30001
+#BfMYroe26WYalil77FoDi9qh59eK5xNr
 
 
 spawn ssh bandit15@bandit.labs.overthewire.org -p 2220

@@ -1,2 +1,3 @@
 In order to use the scripsts you must have 'expect' installed.
-Otherwise use you head and figure it out.
+then run chmod +x <level you want to play>
+then just ./<level you want to play>

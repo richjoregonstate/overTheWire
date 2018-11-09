@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+#nmap -T4 -p 31000-32000 localhost
+#31518 & 31790
+#openssl -s_client -connect localhost:31790
+#copy the key into a file on your pc then run:
+#chmod 600 <name of the key>
+
+spawn ssh bandit16@bandit.labs.overthewire.org -p 2220
+expect "assword:"
+send "cluFn7wTiGryunymYOu4RcffSxQluehd\r"
+interact

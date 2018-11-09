@@ -1,0 +1,5 @@
+#!/usr/bin/expect -f
+
+
+spawn ssh bandit17@bandit.labs.overthewire.org -p 2220 -i level16.sshkey.private
+interact
